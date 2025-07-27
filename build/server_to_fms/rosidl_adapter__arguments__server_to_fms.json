@@ -1,0 +1,6 @@
+{
+  "package_name": "server_to_fms",
+  "non_idl_tuples": [
+    "/home/cj/ros2_custom_msgs/src/server_to_fms:srv/TryOnRequest.srv"
+  ]
+}

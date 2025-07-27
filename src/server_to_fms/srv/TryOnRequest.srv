@@ -1,0 +1,5 @@
+string customer_id
+string shoe_name
+---
+bool success
+int32 estimated_mins

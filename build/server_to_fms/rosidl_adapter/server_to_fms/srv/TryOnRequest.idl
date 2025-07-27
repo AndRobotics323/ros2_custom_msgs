@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from server_to_fms/srv/TryOnRequest.srv
+// generated code does not contain a copyright notice
+
+
+module server_to_fms {
+  module srv {
+    struct TryOnRequest_Request {
+      string customer_id;
+
+      string shoe_name;
+    };
+    struct TryOnRequest_Response {
+      boolean success;
+
+      int32 estimated_mins;
+    };
+  };
+};
