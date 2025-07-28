@@ -1,8 +1,8 @@
-# Install script for directory: /home/cj/ros2_custom_msgs/build/server_to_fms/server_to_fms__py
+# Install script for directory: /home/addinedu/ros2_custom_msgs/build/server_to_fms/server_to_fms__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cj/ros2_custom_msgs/install/server_to_fms")
+  set(CMAKE_INSTALL_PREFIX "/home/addinedu/ros2_custom_msgs/install/server_to_fms")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

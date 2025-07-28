@@ -1,4 +1,6 @@
-string customer_id
+bool whether_customer # True 면 손님 False 면 직원
+int customer_id
+int try_on_location
 string shoe_name
 ---
 bool success

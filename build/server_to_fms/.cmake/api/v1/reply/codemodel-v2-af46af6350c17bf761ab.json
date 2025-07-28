@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-bc53c88948c4593d4746.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "server_to_fms__py",
+					"jsonFile" : "directory-server_to_fms__py-4616fb0c2602dc5c16bd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/addinedu/ros2_custom_msgs/build/server_to_fms/server_to_fms__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "server_to_fms",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_server_to_fms_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_server_to_fms_egg-c9e00259d2b577a6e2be.json",
+					"name" : "ament_cmake_python_build_server_to_fms_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_server_to_fms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_server_to_fms-5d0650fdb275477c2ff9.json",
+					"name" : "ament_cmake_python_copy_server_to_fms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms-85e7da72d5e4b91d4d9f.json",
+					"name" : "server_to_fms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__cpp-02a475fd96989e99b9fd.json",
+					"name" : "server_to_fms__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "server_to_fms__py::@8dba9896831a6dd5734d",
+					"jsonFile" : "target-server_to_fms__py-4827cfb6af1b7170f44f.json",
+					"name" : "server_to_fms__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_generator_c-fc549d95b3dda2f0da20.json",
+					"name" : "server_to_fms__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_generator_py-3ae714a2a5aca5d0b3c0.json",
+					"name" : "server_to_fms__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_generator_type_description-962731ce750a19c015b7.json",
+					"name" : "server_to_fms__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_typesupport_c-14ead0aff433ea8c99a7.json",
+					"name" : "server_to_fms__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_typesupport_cpp-89ac604fa7f5f259f07f.json",
+					"name" : "server_to_fms__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_typesupport_fastrtps_c-48f099e39801d17797ff.json",
+					"name" : "server_to_fms__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_typesupport_fastrtps_cpp-9b2d1280d54e1ab712c4.json",
+					"name" : "server_to_fms__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_typesupport_introspection_c-3e267278b538054c411b.json",
+					"name" : "server_to_fms__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms__rosidl_typesupport_introspection_cpp-cf7d6c1d90647305811e.json",
+					"name" : "server_to_fms__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms_s__rosidl_typesupport_c-3507a1033a09770d3d9e.json",
+					"name" : "server_to_fms_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms_s__rosidl_typesupport_fastrtps_c-21f178089ce6ec75c185.json",
+					"name" : "server_to_fms_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms_s__rosidl_typesupport_introspection_c-c5d8484b9bbe94834efc.json",
+					"name" : "server_to_fms_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server_to_fms_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server_to_fms_uninstall-20f65bb50572abae50b0.json",
+					"name" : "server_to_fms_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-611119dd1836a4434dd5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/addinedu/ros2_custom_msgs/build/server_to_fms",
+		"source" : "/home/addinedu/ros2_custom_msgs/src/server_to_fms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
