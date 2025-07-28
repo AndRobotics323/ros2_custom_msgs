@@ -21,14 +21,15 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'customer_id'
 // Member 'shoe_name'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/TryOnRequest in the package server_to_fms.
 typedef struct server_to_fms__srv__TryOnRequest_Request
 {
-  rosidl_runtime_c__String customer_id;
+  bool whether_customer;
+  int32_t customer_id;
+  int32_t try_on_location;
   rosidl_runtime_c__String shoe_name;
 } server_to_fms__srv__TryOnRequest_Request;
 

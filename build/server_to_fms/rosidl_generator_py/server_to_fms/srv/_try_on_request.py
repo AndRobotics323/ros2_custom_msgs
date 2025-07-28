@@ -62,20 +62,26 @@ class TryOnRequest_Request(metaclass=Metaclass_TryOnRequest_Request):
     """Message class 'TryOnRequest_Request'."""
 
     __slots__ = [
+        '_whether_customer',
         '_customer_id',
+        '_try_on_location',
         '_shoe_name',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'customer_id': 'string',
+        'whether_customer': 'boolean',
+        'customer_id': 'int32',
+        'try_on_location': 'int32',
         'shoe_name': 'string',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
@@ -88,7 +94,9 @@ class TryOnRequest_Request(metaclass=Metaclass_TryOnRequest_Request):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.customer_id = kwargs.get('customer_id', str())
+        self.whether_customer = kwargs.get('whether_customer', bool())
+        self.customer_id = kwargs.get('customer_id', int())
+        self.try_on_location = kwargs.get('try_on_location', int())
         self.shoe_name = kwargs.get('shoe_name', str())
 
     def __repr__(self):
@@ -121,7 +129,11 @@ class TryOnRequest_Request(metaclass=Metaclass_TryOnRequest_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.whether_customer != other.whether_customer:
+            return False
         if self.customer_id != other.customer_id:
+            return False
+        if self.try_on_location != other.try_on_location:
             return False
         if self.shoe_name != other.shoe_name:
             return False
@@ -133,6 +145,19 @@ class TryOnRequest_Request(metaclass=Metaclass_TryOnRequest_Request):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
+    def whether_customer(self):
+        """Message field 'whether_customer'."""
+        return self._whether_customer
+
+    @whether_customer.setter
+    def whether_customer(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'whether_customer' field must be of type 'bool'"
+        self._whether_customer = value
+
+    @builtins.property
     def customer_id(self):
         """Message field 'customer_id'."""
         return self._customer_id
@@ -141,9 +166,26 @@ class TryOnRequest_Request(metaclass=Metaclass_TryOnRequest_Request):
     def customer_id(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, str), \
-                "The 'customer_id' field must be of type 'str'"
+                isinstance(value, int), \
+                "The 'customer_id' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'customer_id' field must be an integer in [-2147483648, 2147483647]"
         self._customer_id = value
+
+    @builtins.property
+    def try_on_location(self):
+        """Message field 'try_on_location'."""
+        return self._try_on_location
+
+    @try_on_location.setter
+    def try_on_location(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'try_on_location' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'try_on_location' field must be an integer in [-2147483648, 2147483647]"
+        self._try_on_location = value
 
     @builtins.property
     def shoe_name(self):

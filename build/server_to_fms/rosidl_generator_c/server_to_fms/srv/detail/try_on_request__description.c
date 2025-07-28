@@ -11,10 +11,10 @@ server_to_fms__srv__TryOnRequest__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xf3, 0xc2, 0x8a, 0x5e, 0x70, 0xed, 0x8c, 0x12,
-      0x63, 0x4a, 0xe3, 0x71, 0xa8, 0xdc, 0x68, 0xc2,
-      0x99, 0x38, 0x6e, 0xd2, 0x6c, 0x86, 0x35, 0x32,
-      0x10, 0xab, 0x5f, 0xb7, 0x74, 0x5c, 0x61, 0xe5,
+      0xf3, 0x96, 0xfa, 0x0b, 0x4f, 0xe8, 0xed, 0x04,
+      0x93, 0x6d, 0xcb, 0xc8, 0xc0, 0xb4, 0x4f, 0x18,
+      0x74, 0x96, 0x07, 0x9b, 0x1d, 0x9f, 0xdd, 0x28,
+      0x4f, 0x0d, 0xbd, 0xcc, 0x7a, 0x43, 0x2f, 0x02,
     }};
   return &hash;
 }
@@ -26,10 +26,10 @@ server_to_fms__srv__TryOnRequest_Request__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x44, 0x88, 0x89, 0x51, 0xf5, 0x97, 0x7c, 0x6e,
-      0xb7, 0xe5, 0x41, 0xff, 0xbb, 0x45, 0x34, 0x30,
-      0x73, 0x7a, 0xb7, 0x4a, 0xfe, 0xa2, 0xca, 0x08,
-      0x6d, 0xcd, 0xf0, 0xee, 0x5d, 0xd1, 0xee, 0x22,
+      0x8a, 0x69, 0x4e, 0x57, 0x70, 0x1f, 0x2a, 0xfc,
+      0xc0, 0x74, 0x7c, 0x4d, 0xc7, 0xa6, 0x3d, 0xc9,
+      0x54, 0x84, 0x8b, 0x1f, 0xb9, 0x37, 0xde, 0x67,
+      0x01, 0x18, 0x47, 0x0d, 0xfc, 0x35, 0xf4, 0xc2,
     }};
   return &hash;
 }
@@ -56,10 +56,10 @@ server_to_fms__srv__TryOnRequest_Event__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x2e, 0xa2, 0xf2, 0xd4, 0x29, 0xbf, 0x57, 0x52,
-      0xf9, 0xb8, 0x63, 0xbc, 0x3b, 0xd9, 0x89, 0xc1,
-      0xe0, 0xd8, 0xb7, 0xac, 0xee, 0x38, 0x16, 0x07,
-      0xf8, 0x14, 0x9e, 0x43, 0xf6, 0xc5, 0xa7, 0x24,
+      0xee, 0x8f, 0x19, 0x76, 0x65, 0xb0, 0xb0, 0x29,
+      0x02, 0xde, 0xfb, 0xdf, 0x14, 0x7e, 0xc6, 0x2f,
+      0x0a, 0xb6, 0x40, 0x5d, 0x28, 0x26, 0xce, 0x11,
+      0x8b, 0xc9, 0xfd, 0xcc, 0x7e, 0xc2, 0xd4, 0xaf,
     }};
   return &hash;
 }
@@ -181,14 +181,36 @@ server_to_fms__srv__TryOnRequest__get_type_description(
   return &description;
 }
 // Define type names, field names, and default values
+static char server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__whether_customer[] = "whether_customer";
 static char server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__customer_id[] = "customer_id";
+static char server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__try_on_location[] = "try_on_location";
 static char server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__shoe_name[] = "shoe_name";
 
 static rosidl_runtime_c__type_description__Field server_to_fms__srv__TryOnRequest_Request__FIELDS[] = {
   {
+    {server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__whether_customer, 16, 16},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
     {server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__customer_id, 11, 11},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {server_to_fms__srv__TryOnRequest_Request__FIELD_NAME__try_on_location, 15, 15},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
       0,
       0,
       {NULL, 0, 0},
@@ -216,7 +238,7 @@ server_to_fms__srv__TryOnRequest_Request__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {server_to_fms__srv__TryOnRequest_Request__TYPE_NAME, 38, 38},
-      {server_to_fms__srv__TryOnRequest_Request__FIELDS, 2, 2},
+      {server_to_fms__srv__TryOnRequest_Request__FIELDS, 4, 4},
     },
     {NULL, 0, 0},
   };
@@ -353,7 +375,9 @@ server_to_fms__srv__TryOnRequest_Event__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
-  "string customer_id\n"
+  "bool whether_customer \n"
+  "int32 customer_id\n"
+  "int32 try_on_location\n"
   "string shoe_name\n"
   "---\n"
   "bool success\n"
@@ -372,7 +396,7 @@ server_to_fms__srv__TryOnRequest__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {server_to_fms__srv__TryOnRequest__TYPE_NAME, 30, 30},
     {srv_encoding, 3, 3},
-    {toplevel_type_raw_source, 74, 74},
+    {toplevel_type_raw_source, 118, 118},
   };
   return &source;
 }

@@ -6,7 +6,11 @@
 module server_to_fms {
   module srv {
     struct TryOnRequest_Request {
-      string customer_id;
+      boolean whether_customer;
+
+      int32 customer_id;
+
+      int32 try_on_location;
 
       string shoe_name;
     };

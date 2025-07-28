@@ -38,10 +38,28 @@ void TryOnRequest_Request_fini_function(void * message_memory)
   typed_message->~TryOnRequest_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember TryOnRequest_Request_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember TryOnRequest_Request_message_member_array[4] = {
+  {
+    "whether_customer",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(server_to_fms::srv::TryOnRequest_Request, whether_customer),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "customer_id",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -49,6 +67,24 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember TryOnRequest_
     0,  // array size
     false,  // is upper bound
     offsetof(server_to_fms::srv::TryOnRequest_Request, customer_id),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "try_on_location",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(server_to_fms::srv::TryOnRequest_Request, try_on_location),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -80,7 +116,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember TryOnRequest_
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers TryOnRequest_Request_message_members = {
   "server_to_fms::srv",  // message namespace
   "TryOnRequest_Request",  // message name
-  2,  // number of fields
+  4,  // number of fields
   sizeof(server_to_fms::srv::TryOnRequest_Request),
   false,  // has_any_key_member_
   TryOnRequest_Request_message_member_array,  // message members

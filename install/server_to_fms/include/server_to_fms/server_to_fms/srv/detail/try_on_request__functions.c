@@ -11,7 +11,6 @@
 #include "rcutils/allocator.h"
 
 // Include directives for member types
-// Member `customer_id`
 // Member `shoe_name`
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -21,11 +20,9 @@ server_to_fms__srv__TryOnRequest_Request__init(server_to_fms__srv__TryOnRequest_
   if (!msg) {
     return false;
   }
+  // whether_customer
   // customer_id
-  if (!rosidl_runtime_c__String__init(&msg->customer_id)) {
-    server_to_fms__srv__TryOnRequest_Request__fini(msg);
-    return false;
-  }
+  // try_on_location
   // shoe_name
   if (!rosidl_runtime_c__String__init(&msg->shoe_name)) {
     server_to_fms__srv__TryOnRequest_Request__fini(msg);
@@ -40,8 +37,9 @@ server_to_fms__srv__TryOnRequest_Request__fini(server_to_fms__srv__TryOnRequest_
   if (!msg) {
     return;
   }
+  // whether_customer
   // customer_id
-  rosidl_runtime_c__String__fini(&msg->customer_id);
+  // try_on_location
   // shoe_name
   rosidl_runtime_c__String__fini(&msg->shoe_name);
 }
@@ -52,10 +50,16 @@ server_to_fms__srv__TryOnRequest_Request__are_equal(const server_to_fms__srv__Tr
   if (!lhs || !rhs) {
     return false;
   }
+  // whether_customer
+  if (lhs->whether_customer != rhs->whether_customer) {
+    return false;
+  }
   // customer_id
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->customer_id), &(rhs->customer_id)))
-  {
+  if (lhs->customer_id != rhs->customer_id) {
+    return false;
+  }
+  // try_on_location
+  if (lhs->try_on_location != rhs->try_on_location) {
     return false;
   }
   // shoe_name
@@ -75,12 +79,12 @@ server_to_fms__srv__TryOnRequest_Request__copy(
   if (!input || !output) {
     return false;
   }
+  // whether_customer
+  output->whether_customer = input->whether_customer;
   // customer_id
-  if (!rosidl_runtime_c__String__copy(
-      &(input->customer_id), &(output->customer_id)))
-  {
-    return false;
-  }
+  output->customer_id = input->customer_id;
+  // try_on_location
+  output->try_on_location = input->try_on_location;
   // shoe_name
   if (!rosidl_runtime_c__String__copy(
       &(input->shoe_name), &(output->shoe_name)))

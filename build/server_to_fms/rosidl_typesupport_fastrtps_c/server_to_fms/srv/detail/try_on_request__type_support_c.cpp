@@ -36,8 +36,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // customer_id, shoe_name
-#include "rosidl_runtime_c/string_functions.h"  // customer_id, shoe_name
+#include "rosidl_runtime_c/string.h"  // shoe_name
+#include "rosidl_runtime_c/string_functions.h"  // shoe_name
 
 // forward declare type support functions
 
@@ -50,18 +50,19 @@ bool cdr_serialize_server_to_fms__srv__TryOnRequest_Request(
   const server_to_fms__srv__TryOnRequest_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Field name: whether_customer
+  {
+    cdr << (ros_message->whether_customer ? true : false);
+  }
+
   // Field name: customer_id
   {
-    const rosidl_runtime_c__String * str = &ros_message->customer_id;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->customer_id;
+  }
+
+  // Field name: try_on_location
+  {
+    cdr << ros_message->try_on_location;
   }
 
   // Field name: shoe_name
@@ -86,20 +87,21 @@ bool cdr_deserialize_server_to_fms__srv__TryOnRequest_Request(
   eprosima::fastcdr::Cdr & cdr,
   server_to_fms__srv__TryOnRequest_Request * ros_message)
 {
+  // Field name: whether_customer
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->whether_customer = tmp ? true : false;
+  }
+
   // Field name: customer_id
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->customer_id.data) {
-      rosidl_runtime_c__String__init(&ros_message->customer_id);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->customer_id,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'customer_id'\n");
-      return false;
-    }
+    cdr >> ros_message->customer_id;
+  }
+
+  // Field name: try_on_location
+  {
+    cdr >> ros_message->try_on_location;
   }
 
   // Field name: shoe_name
@@ -136,10 +138,26 @@ size_t get_serialized_size_server_to_fms__srv__TryOnRequest_Request(
   (void)padding;
   (void)wchar_size;
 
+  // Field name: whether_customer
+  {
+    size_t item_size = sizeof(ros_message->whether_customer);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Field name: customer_id
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->customer_id.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->customer_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: try_on_location
+  {
+    size_t item_size = sizeof(ros_message->try_on_location);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   // Field name: shoe_name
   current_alignment += padding +
@@ -168,16 +186,27 @@ size_t max_serialized_size_server_to_fms__srv__TryOnRequest_Request(
   full_bounded = true;
   is_plain = true;
 
+  // Field name: whether_customer
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   // Field name: customer_id
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: try_on_location
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Field name: shoe_name
@@ -213,18 +242,19 @@ bool cdr_serialize_key_server_to_fms__srv__TryOnRequest_Request(
   const server_to_fms__srv__TryOnRequest_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Field name: whether_customer
+  {
+    cdr << (ros_message->whether_customer ? true : false);
+  }
+
   // Field name: customer_id
   {
-    const rosidl_runtime_c__String * str = &ros_message->customer_id;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->customer_id;
+  }
+
+  // Field name: try_on_location
+  {
+    cdr << ros_message->try_on_location;
   }
 
   // Field name: shoe_name
@@ -259,10 +289,26 @@ size_t get_serialized_size_key_server_to_fms__srv__TryOnRequest_Request(
   (void)padding;
   (void)wchar_size;
 
+  // Field name: whether_customer
+  {
+    size_t item_size = sizeof(ros_message->whether_customer);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Field name: customer_id
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->customer_id.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->customer_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: try_on_location
+  {
+    size_t item_size = sizeof(ros_message->try_on_location);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   // Field name: shoe_name
   current_alignment += padding +
@@ -289,16 +335,27 @@ size_t max_serialized_size_key_server_to_fms__srv__TryOnRequest_Request(
 
   full_bounded = true;
   is_plain = true;
+  // Field name: whether_customer
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   // Field name: customer_id
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: try_on_location
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Field name: shoe_name

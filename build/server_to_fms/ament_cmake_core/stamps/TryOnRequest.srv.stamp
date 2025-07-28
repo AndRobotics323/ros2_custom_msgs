@@ -1,4 +1,6 @@
-string customer_id
+bool whether_customer 
+int32 customer_id
+int32 try_on_location
 string shoe_name
 ---
 bool success

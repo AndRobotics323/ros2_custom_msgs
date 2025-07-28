@@ -28,10 +28,24 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: whether_customer
+  {
+    out << "whether_customer: ";
+    rosidl_generator_traits::value_to_yaml(msg.whether_customer, out);
+    out << ", ";
+  }
+
   // member: customer_id
   {
     out << "customer_id: ";
     rosidl_generator_traits::value_to_yaml(msg.customer_id, out);
+    out << ", ";
+  }
+
+  // member: try_on_location
+  {
+    out << "try_on_location: ";
+    rosidl_generator_traits::value_to_yaml(msg.try_on_location, out);
     out << ", ";
   }
 
@@ -47,6 +61,16 @@ inline void to_block_style_yaml(
   const TryOnRequest_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: whether_customer
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "whether_customer: ";
+    rosidl_generator_traits::value_to_yaml(msg.whether_customer, out);
+    out << "\n";
+  }
+
   // member: customer_id
   {
     if (indentation > 0) {
@@ -54,6 +78,16 @@ inline void to_block_style_yaml(
     }
     out << "customer_id: ";
     rosidl_generator_traits::value_to_yaml(msg.customer_id, out);
+    out << "\n";
+  }
+
+  // member: try_on_location
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "try_on_location: ";
+    rosidl_generator_traits::value_to_yaml(msg.try_on_location, out);
     out << "\n";
   }
 

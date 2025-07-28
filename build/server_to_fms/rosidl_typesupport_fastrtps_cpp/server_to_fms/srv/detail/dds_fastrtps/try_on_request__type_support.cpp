@@ -36,8 +36,14 @@ cdr_serialize(
   const server_to_fms::srv::TryOnRequest_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: whether_customer
+  cdr << (ros_message.whether_customer ? true : false);
+
   // Member: customer_id
   cdr << ros_message.customer_id;
+
+  // Member: try_on_location
+  cdr << ros_message.try_on_location;
 
   // Member: shoe_name
   cdr << ros_message.shoe_name;
@@ -51,8 +57,18 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   server_to_fms::srv::TryOnRequest_Request & ros_message)
 {
+  // Member: whether_customer
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.whether_customer = tmp ? true : false;
+  }
+
   // Member: customer_id
   cdr >> ros_message.customer_id;
+
+  // Member: try_on_location
+  cdr >> ros_message.try_on_location;
 
   // Member: shoe_name
   cdr >> ros_message.shoe_name;
@@ -74,10 +90,26 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: whether_customer
+  {
+    size_t item_size = sizeof(ros_message.whether_customer);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Member: customer_id
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.customer_id.size() + 1);
+  {
+    size_t item_size = sizeof(ros_message.customer_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: try_on_location
+  {
+    size_t item_size = sizeof(ros_message.try_on_location);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   // Member: shoe_name
   current_alignment += padding +
@@ -107,16 +139,25 @@ max_serialized_size_TryOnRequest_Request(
   full_bounded = true;
   is_plain = true;
 
+  // Member: whether_customer
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
   // Member: customer_id
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: try_on_location
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // Member: shoe_name
   {
@@ -152,8 +193,14 @@ cdr_serialize_key(
   const server_to_fms::srv::TryOnRequest_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: whether_customer
+  cdr << (ros_message.whether_customer ? true : false);
+
   // Member: customer_id
   cdr << ros_message.customer_id;
+
+  // Member: try_on_location
+  cdr << ros_message.try_on_location;
 
   // Member: shoe_name
   cdr << ros_message.shoe_name;
@@ -174,10 +221,26 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
+  // Member: whether_customer
+  {
+    size_t item_size = sizeof(ros_message.whether_customer);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Member: customer_id
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.customer_id.size() + 1);
+  {
+    size_t item_size = sizeof(ros_message.customer_id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: try_on_location
+  {
+    size_t item_size = sizeof(ros_message.try_on_location);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   // Member: shoe_name
   current_alignment += padding +
@@ -206,16 +269,27 @@ max_serialized_size_key_TryOnRequest_Request(
   full_bounded = true;
   is_plain = true;
 
+  // Member: whether_customer
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   // Member: customer_id
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: try_on_location
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: shoe_name

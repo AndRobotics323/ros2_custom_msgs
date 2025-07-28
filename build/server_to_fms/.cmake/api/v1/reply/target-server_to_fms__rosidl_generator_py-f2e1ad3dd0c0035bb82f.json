@@ -623,12 +623,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 73,
-			"id" : "server_to_fms__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 10,
 			"id" : "server_to_fms__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 73,
+			"id" : "server_to_fms__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 73,

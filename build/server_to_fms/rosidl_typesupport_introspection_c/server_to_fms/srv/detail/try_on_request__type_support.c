@@ -13,7 +13,6 @@
 
 
 // Include directives for member types
-// Member `customer_id`
 // Member `shoe_name`
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -36,10 +35,28 @@ void server_to_fms__srv__TryOnRequest_Request__rosidl_typesupport_introspection_
   server_to_fms__srv__TryOnRequest_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember server_to_fms__srv__TryOnRequest_Request__rosidl_typesupport_introspection_c__TryOnRequest_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember server_to_fms__srv__TryOnRequest_Request__rosidl_typesupport_introspection_c__TryOnRequest_Request_message_member_array[4] = {
+  {
+    "whether_customer",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(server_to_fms__srv__TryOnRequest_Request, whether_customer),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "customer_id",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -47,6 +64,24 @@ static rosidl_typesupport_introspection_c__MessageMember server_to_fms__srv__Try
     0,  // array size
     false,  // is upper bound
     offsetof(server_to_fms__srv__TryOnRequest_Request, customer_id),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "try_on_location",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(server_to_fms__srv__TryOnRequest_Request, try_on_location),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -78,7 +113,7 @@ static rosidl_typesupport_introspection_c__MessageMember server_to_fms__srv__Try
 static const rosidl_typesupport_introspection_c__MessageMembers server_to_fms__srv__TryOnRequest_Request__rosidl_typesupport_introspection_c__TryOnRequest_Request_message_members = {
   "server_to_fms__srv",  // message namespace
   "TryOnRequest_Request",  // message name
-  2,  // number of fields
+  4,  // number of fields
   sizeof(server_to_fms__srv__TryOnRequest_Request),
   false,  // has_any_key_member_
   server_to_fms__srv__TryOnRequest_Request__rosidl_typesupport_introspection_c__TryOnRequest_Request_message_member_array,  // message members

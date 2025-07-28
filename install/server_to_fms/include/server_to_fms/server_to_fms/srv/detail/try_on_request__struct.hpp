@@ -41,36 +41,57 @@ struct TryOnRequest_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->customer_id = "";
+      this->whether_customer = false;
+      this->customer_id = 0l;
+      this->try_on_location = 0l;
       this->shoe_name = "";
     }
   }
 
   explicit TryOnRequest_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : customer_id(_alloc),
-    shoe_name(_alloc)
+  : shoe_name(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->customer_id = "";
+      this->whether_customer = false;
+      this->customer_id = 0l;
+      this->try_on_location = 0l;
       this->shoe_name = "";
     }
   }
 
   // field types and members
+  using _whether_customer_type =
+    bool;
+  _whether_customer_type whether_customer;
   using _customer_id_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    int32_t;
   _customer_id_type customer_id;
+  using _try_on_location_type =
+    int32_t;
+  _try_on_location_type try_on_location;
   using _shoe_name_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _shoe_name_type shoe_name;
 
   // setters for named parameter idiom
+  Type & set__whether_customer(
+    const bool & _arg)
+  {
+    this->whether_customer = _arg;
+    return *this;
+  }
   Type & set__customer_id(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const int32_t & _arg)
   {
     this->customer_id = _arg;
+    return *this;
+  }
+  Type & set__try_on_location(
+    const int32_t & _arg)
+  {
+    this->try_on_location = _arg;
     return *this;
   }
   Type & set__shoe_name(
@@ -122,7 +143,13 @@ struct TryOnRequest_Request_
   // comparison operators
   bool operator==(const TryOnRequest_Request_ & other) const
   {
+    if (this->whether_customer != other.whether_customer) {
+      return false;
+    }
     if (this->customer_id != other.customer_id) {
+      return false;
+    }
+    if (this->try_on_location != other.try_on_location) {
       return false;
     }
     if (this->shoe_name != other.shoe_name) {

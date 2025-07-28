@@ -4,9 +4,29 @@
       "type_name": "server_to_fms/srv/TryOnRequest_Request",
       "fields": [
         {
+          "name": "whether_customer",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
           "name": "customer_id",
           "type": {
-            "type_id": 17,
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "try_on_location",
+          "type": {
+            "type_id": 6,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -30,7 +50,7 @@
   "type_hashes": [
     {
       "type_name": "server_to_fms/srv/TryOnRequest_Request",
-      "hash_string": "RIHS01_44888951f5977c6eb7e541ffbb453430737ab74afea2ca086dcdf0ee5dd1ee22"
+      "hash_string": "RIHS01_8a694e57701f2afcc0747c4dc7a63dc954848b1fb937de670118470dfc35f4c2"
     }
   ]
 }

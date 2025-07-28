@@ -53,19 +53,31 @@ bool server_to_fms__srv__try_on_request__request__convert_from_py(PyObject * _py
     assert(strncmp("server_to_fms.srv._try_on_request.TryOnRequest_Request", full_classname_dest, 54) == 0);
   }
   server_to_fms__srv__TryOnRequest_Request * ros_message = _ros_message;
+  {  // whether_customer
+    PyObject * field = PyObject_GetAttrString(_pymsg, "whether_customer");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->whether_customer = (Py_True == field);
+    Py_DECREF(field);
+  }
   {  // customer_id
     PyObject * field = PyObject_GetAttrString(_pymsg, "customer_id");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
+    assert(PyLong_Check(field));
+    ros_message->customer_id = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // try_on_location
+    PyObject * field = PyObject_GetAttrString(_pymsg, "try_on_location");
+    if (!field) {
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->customer_id, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyLong_Check(field));
+    ros_message->try_on_location = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // shoe_name
@@ -105,17 +117,33 @@ PyObject * server_to_fms__srv__try_on_request__request__convert_to_py(void * raw
     }
   }
   server_to_fms__srv__TryOnRequest_Request * ros_message = (server_to_fms__srv__TryOnRequest_Request *)raw_ros_message;
+  {  // whether_customer
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->whether_customer ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "whether_customer", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // customer_id
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->customer_id.data,
-      strlen(ros_message->customer_id.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyLong_FromLong(ros_message->customer_id);
     {
       int rc = PyObject_SetAttrString(_pymessage, "customer_id", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // try_on_location
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->try_on_location);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "try_on_location", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

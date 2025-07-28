@@ -40,16 +40,48 @@ private:
   ::server_to_fms::srv::TryOnRequest_Request msg_;
 };
 
+class Init_TryOnRequest_Request_try_on_location
+{
+public:
+  explicit Init_TryOnRequest_Request_try_on_location(::server_to_fms::srv::TryOnRequest_Request & msg)
+  : msg_(msg)
+  {}
+  Init_TryOnRequest_Request_shoe_name try_on_location(::server_to_fms::srv::TryOnRequest_Request::_try_on_location_type arg)
+  {
+    msg_.try_on_location = std::move(arg);
+    return Init_TryOnRequest_Request_shoe_name(msg_);
+  }
+
+private:
+  ::server_to_fms::srv::TryOnRequest_Request msg_;
+};
+
 class Init_TryOnRequest_Request_customer_id
 {
 public:
-  Init_TryOnRequest_Request_customer_id()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_TryOnRequest_Request_customer_id(::server_to_fms::srv::TryOnRequest_Request & msg)
+  : msg_(msg)
   {}
-  Init_TryOnRequest_Request_shoe_name customer_id(::server_to_fms::srv::TryOnRequest_Request::_customer_id_type arg)
+  Init_TryOnRequest_Request_try_on_location customer_id(::server_to_fms::srv::TryOnRequest_Request::_customer_id_type arg)
   {
     msg_.customer_id = std::move(arg);
-    return Init_TryOnRequest_Request_shoe_name(msg_);
+    return Init_TryOnRequest_Request_try_on_location(msg_);
+  }
+
+private:
+  ::server_to_fms::srv::TryOnRequest_Request msg_;
+};
+
+class Init_TryOnRequest_Request_whether_customer
+{
+public:
+  Init_TryOnRequest_Request_whether_customer()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_TryOnRequest_Request_customer_id whether_customer(::server_to_fms::srv::TryOnRequest_Request::_whether_customer_type arg)
+  {
+    msg_.whether_customer = std::move(arg);
+    return Init_TryOnRequest_Request_customer_id(msg_);
   }
 
 private:
@@ -67,7 +99,7 @@ template<>
 inline
 auto build<::server_to_fms::srv::TryOnRequest_Request>()
 {
-  return server_to_fms::srv::builder::Init_TryOnRequest_Request_customer_id();
+  return server_to_fms::srv::builder::Init_TryOnRequest_Request_whether_customer();
 }
 
 }  // namespace server_to_fms

@@ -65,9 +65,29 @@
         "type_name": "server_to_fms/srv/TryOnRequest_Request",
         "fields": [
           {
+            "name": "whether_customer",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
             "name": "customer_id",
             "type": {
-              "type_id": 17,
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "try_on_location",
+            "type": {
+              "type_id": 6,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -161,7 +181,7 @@
   "type_hashes": [
     {
       "type_name": "server_to_fms/srv/TryOnRequest_Event",
-      "hash_string": "RIHS01_2ea2f2d429bf5752f9b863bc3bd989c1e0d8b7acee381607f8149e43f6c5a724"
+      "hash_string": "RIHS01_ee8f197665b0b02902defbdf147ec62f0ab6405d2826ce118bc9fdcc7ec2d4af"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -169,7 +189,7 @@
     },
     {
       "type_name": "server_to_fms/srv/TryOnRequest_Request",
-      "hash_string": "RIHS01_44888951f5977c6eb7e541ffbb453430737ab74afea2ca086dcdf0ee5dd1ee22"
+      "hash_string": "RIHS01_8a694e57701f2afcc0747c4dc7a63dc954848b1fb937de670118470dfc35f4c2"
     },
     {
       "type_name": "server_to_fms/srv/TryOnRequest_Response",

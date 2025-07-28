@@ -10,7 +10,7 @@ class TryOnService(Node):
         self.srv = self.create_service(TryOnRequest, 'try_on_service', self.handle_request)
 
     def handle_request(self, request, response):
-        self.get_logger().info(f"받은 요청: {request.customer_id}, {request.shoe_name}")
+        self.get_logger().info(f"받은 요청: { str(request.customer_id) }, {request.shoe_name}")
         response.success = True
         response.estimated_mins = 3
         # response.message = f"{request.shoe_name} 준비 완료"
