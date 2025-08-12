@@ -1,4 +1,0 @@
-source;share/server_to_fms/local_setup.bash
-source;share/server_to_fms/local_setup.dsv
-source;share/server_to_fms/local_setup.sh
-source;share/server_to_fms/local_setup.zsh

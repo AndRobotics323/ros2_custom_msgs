@@ -1,6 +1,0 @@
-setup.py
-server_to_fms/__init__.py
-server_to_fms.egg-info/PKG-INFO
-server_to_fms.egg-info/SOURCES.txt
-server_to_fms.egg-info/dependency_links.txt
-server_to_fms.egg-info/top_level.txt
