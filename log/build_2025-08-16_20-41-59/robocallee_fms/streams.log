@@ -1,0 +1,383 @@
+[0.019s] Invoking command in '/home/cj/ros2_custom_msgs/build/robocallee_fms': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cj/ros2_study/install/yolov8_ros:/home/cj/ros2_study/install/yolo_ros:/home/cj/ros2_study/install/stt_whisper:/home/cj/ros2_study/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cj/ros2_custom_msgs/src/robocallee_fms -DCMAKE_INSTALL_PREFIX=/home/cj/ros2_custom_msgs/install/robocallee_fms
+[0.219s] -- The C compiler identification is GNU 13.3.0
+[0.395s] -- The CXX compiler identification is GNU 13.3.0
+[0.427s] -- Detecting C compiler ABI info
+[0.550s] -- Detecting C compiler ABI info - done
+[0.558s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.559s] -- Detecting C compile features
+[0.559s] -- Detecting C compile features - done
+[0.573s] -- Detecting CXX compiler ABI info
+[0.692s] -- Detecting CXX compiler ABI info - done
+[0.699s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.699s] -- Detecting CXX compile features
+[0.699s] -- Detecting CXX compile features - done
+[0.716s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.893s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.088s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.108s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.228s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.326s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.336s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.061s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.560s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.228s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.238s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.383s] -- Found PythonExtra: /usr/bin/python3  
+[3.997s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.053s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.119s] -- Added test 'lint_cmake' to check CMake code style
+[4.122s] -- Added test 'xmllint' to check XML markup files
+[4.127s] -- Configuring done (4.1s)
+[4.179s] -- Generating done (0.0s)
+[4.189s] -- Build files have been written to: /home/cj/ros2_custom_msgs/build/robocallee_fms
+[4.203s] Invoked command in '/home/cj/ros2_custom_msgs/build/robocallee_fms' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cj/ros2_study/install/yolov8_ros:/home/cj/ros2_study/install/yolo_ros:/home/cj/ros2_study/install/stt_whisper:/home/cj/ros2_study/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/cj/ros2_custom_msgs/src/robocallee_fms -DCMAKE_INSTALL_PREFIX=/home/cj/ros2_custom_msgs/install/robocallee_fms
+[4.205s] Invoking command in '/home/cj/ros2_custom_msgs/build/robocallee_fms': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cj/ros2_study/install/yolov8_ros:/home/cj/ros2_study/install/yolo_ros:/home/cj/ros2_study/install/stt_whisper:/home/cj/ros2_study/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cj/ros2_custom_msgs/build/robocallee_fms -- -j4 -l4
+[4.274s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.286s] [  1%] Built target ament_cmake_python_copy_robocallee_fms
+[4.549s] running egg_info
+[4.549s] creating robocallee_fms.egg-info
+[4.552s] [  1%] Built target robocallee_fms__rosidl_generator_type_description
+[4.568s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.581s] writing robocallee_fms.egg-info/PKG-INFO
+[4.581s] writing dependency_links to robocallee_fms.egg-info/dependency_links.txt
+[4.581s] writing top-level names to robocallee_fms.egg-info/top_level.txt
+[4.582s] writing manifest file 'robocallee_fms.egg-info/SOURCES.txt'
+[4.585s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.670s] reading manifest file 'robocallee_fms.egg-info/SOURCES.txt'
+[4.670s] writing manifest file 'robocallee_fms.egg-info/SOURCES.txt'
+[4.708s] [  4%] Built target ament_cmake_python_build_robocallee_fms_egg
+[5.148s] [  4%] Built target robocallee_fms__cpp
+[5.240s] [  9%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/msg/detail/aruco_pose__type_support.c.o[0m
+[5.240s] [  9%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/msg/detail/aruco_pose_array__description.c.o[0m
+[5.241s] [  9%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/msg/detail/aruco_pose__description.c.o[0m
+[5.241s] [  9%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/msg/detail/aruco_pose__functions.c.o[0m
+[5.311s] [ 10%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/msg/detail/aruco_pose_array__functions.c.o[0m
+[5.323s] [ 12%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/msg/detail/aruco_pose_array__type_support.c.o[0m
+[5.329s] [ 13%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/customer_request__description.c.o[0m
+[5.345s] [ 14%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/customer_request__functions.c.o[0m
+[5.362s] [ 16%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/customer_request__type_support.c.o[0m
+[5.367s] [ 17%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/employee_request__description.c.o[0m
+[5.387s] [ 18%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/employee_request__functions.c.o[0m
+[5.407s] [ 20%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/employee_request__type_support.c.o[0m
+[5.417s] [ 22%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/robot_arm_request__functions.c.o[0m
+[5.417s] [ 22%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/robot_arm_request__description.c.o[0m
+[5.452s] [ 24%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_c.dir/rosidl_generator_c/robocallee_fms/srv/detail/robot_arm_request__type_support.c.o[0m
+[5.495s] [ 25%] [32m[1mLinking C shared library librobocallee_fms__rosidl_generator_c.so[0m
+[5.551s] [ 25%] Built target robocallee_fms__rosidl_generator_c
+[5.568s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.568s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.572s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.572s] [ 31%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.953s] [ 32%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_c.dir/rosidl_typesupport_c/robocallee_fms/msg/aruco_pose__type_support.cpp.o[0m
+[5.985s] [ 33%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robocallee_fms/msg/aruco_pose__type_support.cpp.o[0m
+[6.064s] [ 35%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_c.dir/rosidl_typesupport_c/robocallee_fms/msg/aruco_pose_array__type_support.cpp.o[0m
+[6.130s] [ 36%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_c.dir/rosidl_typesupport_c/robocallee_fms/srv/customer_request__type_support.cpp.o[0m
+[6.159s] [ 37%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robocallee_fms/msg/detail/aruco_pose__type_support.c.o[0m
+[6.198s] [ 39%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_c.dir/rosidl_typesupport_c/robocallee_fms/srv/employee_request__type_support.cpp.o[0m
+[6.210s] [ 40%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robocallee_fms/msg/detail/aruco_pose_array__type_support.c.o[0m
+[6.250s] [ 41%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_c.dir/rosidl_typesupport_c/robocallee_fms/srv/robot_arm_request__type_support.cpp.o[0m
+[6.273s] [ 43%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robocallee_fms/srv/detail/customer_request__type_support.c.o[0m
+[6.317s] [ 44%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robocallee_fms/msg/detail/aruco_pose__type_support_c.cpp.o[0m
+[6.339s] [ 45%] [32m[1mLinking CXX shared library librobocallee_fms__rosidl_typesupport_c.so[0m
+[6.350s] [ 47%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robocallee_fms/srv/detail/employee_request__type_support.c.o[0m
+[6.423s] [ 48%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robocallee_fms/srv/detail/robot_arm_request__type_support.c.o[0m
+[6.429s] [ 48%] Built target robocallee_fms__rosidl_typesupport_c
+[6.445s] [ 50%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robocallee_fms/msg/detail/aruco_pose_array__type_support_c.cpp.o[0m
+[6.488s] [ 51%] [32m[1mLinking C shared library librobocallee_fms__rosidl_typesupport_introspection_c.so[0m
+[6.493s] [ 52%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robocallee_fms/msg/aruco_pose_array__type_support.cpp.o[0m
+[6.546s] [ 52%] Built target robocallee_fms__rosidl_typesupport_introspection_c
+[6.575s] [ 54%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robocallee_fms/srv/detail/customer_request__type_support_c.cpp.o[0m
+[6.837s] [ 55%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robocallee_fms/srv/customer_request__type_support.cpp.o[0m
+[6.947s] [ 56%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robocallee_fms/srv/detail/employee_request__type_support_c.cpp.o[0m
+[6.990s] [ 58%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robocallee_fms/srv/detail/robot_arm_request__type_support_c.cpp.o[0m
+[7.205s] [ 59%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.290s] [ 60%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robocallee_fms/srv/employee_request__type_support.cpp.o[0m
+[7.559s] [ 62%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robocallee_fms/srv/robot_arm_request__type_support.cpp.o[0m
+[7.587s] [ 63%] [32m[1mLinking CXX shared library librobocallee_fms__rosidl_typesupport_fastrtps_c.so[0m
+[7.679s] [ 64%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.712s] [ 64%] Built target robocallee_fms__rosidl_typesupport_fastrtps_c
+[7.819s] [ 67%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robocallee_fms/msg/detail/dds_fastrtps/aruco_pose__type_support.cpp.o[0m
+[7.819s] [ 67%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robocallee_fms/msg/detail/dds_fastrtps/aruco_pose_array__type_support.cpp.o[0m
+[7.963s] [ 68%] [32m[1mLinking CXX shared library librobocallee_fms__rosidl_typesupport_cpp.so[0m
+[8.102s] [ 68%] Built target robocallee_fms__rosidl_typesupport_cpp
+[8.161s] [ 70%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robocallee_fms/srv/detail/dds_fastrtps/customer_request__type_support.cpp.o[0m
+[8.178s] [ 71%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robocallee_fms/msg/detail/aruco_pose__type_support.cpp.o[0m
+[8.341s] [ 72%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robocallee_fms/srv/detail/dds_fastrtps/employee_request__type_support.cpp.o[0m
+[8.513s] [ 74%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robocallee_fms/srv/detail/dds_fastrtps/robot_arm_request__type_support.cpp.o[0m
+[8.517s] [ 75%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robocallee_fms/msg/detail/aruco_pose_array__type_support.cpp.o[0m
+[8.850s] [ 77%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robocallee_fms/srv/detail/customer_request__type_support.cpp.o[0m
+[8.856s] [ 78%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robocallee_fms/srv/detail/employee_request__type_support.cpp.o[0m
+[9.028s] [ 79%] [32mBuilding CXX object CMakeFiles/robocallee_fms__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robocallee_fms/srv/detail/robot_arm_request__type_support.cpp.o[0m
+[9.222s] [ 81%] [32m[1mLinking CXX shared library librobocallee_fms__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.383s] [ 81%] Built target robocallee_fms__rosidl_typesupport_fastrtps_cpp
+[9.480s] [ 82%] [32m[1mLinking CXX shared library librobocallee_fms__rosidl_typesupport_introspection_cpp.so[0m
+[9.569s] [ 82%] Built target robocallee_fms__rosidl_typesupport_introspection_cpp
+[9.595s] [ 82%] Built target robocallee_fms
+[9.624s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.332s] [ 83%] Built target robocallee_fms__py
+[10.359s] [ 85%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_py.dir/rosidl_generator_py/robocallee_fms/srv/_customer_request_s.c.o[0m
+[10.359s] [ 89%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_py.dir/rosidl_generator_py/robocallee_fms/msg/_aruco_pose_array_s.c.o[0m
+[10.359s] [ 89%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_py.dir/rosidl_generator_py/robocallee_fms/srv/_employee_request_s.c.o[0m
+[10.360s] [ 89%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_py.dir/rosidl_generator_py/robocallee_fms/msg/_aruco_pose_s.c.o[0m
+[10.557s] [ 90%] [32mBuilding C object CMakeFiles/robocallee_fms__rosidl_generator_py.dir/rosidl_generator_py/robocallee_fms/srv/_robot_arm_request_s.c.o[0m
+[10.697s] [ 91%] [32m[1mLinking C shared library librobocallee_fms__rosidl_generator_py.so[0m
+[10.756s] [ 91%] Built target robocallee_fms__rosidl_generator_py
+[10.783s] [ 95%] [32mBuilding C object CMakeFiles/robocallee_fms_s__rosidl_typesupport_c.dir/rosidl_generator_py/robocallee_fms/_robocallee_fms_s.ep.rosidl_typesupport_c.c.o[0m
+[10.784s] [ 95%] [32mBuilding C object CMakeFiles/robocallee_fms_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/robocallee_fms/_robocallee_fms_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[10.784s] [ 95%] [32mBuilding C object CMakeFiles/robocallee_fms_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/robocallee_fms/_robocallee_fms_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[10.910s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/robocallee_fms/robocallee_fms_s__rosidl_typesupport_c.so[0m
+[10.924s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/robocallee_fms/robocallee_fms_s__rosidl_typesupport_introspection_c.so[0m
+[10.930s] [100%] [32m[1mLinking C shared module rosidl_generator_py/robocallee_fms/robocallee_fms_s__rosidl_typesupport_fastrtps_c.so[0m
+[10.951s] [100%] Built target robocallee_fms_s__rosidl_typesupport_c
+[10.964s] [100%] Built target robocallee_fms_s__rosidl_typesupport_introspection_c
+[10.975s] [100%] Built target robocallee_fms_s__rosidl_typesupport_fastrtps_c
+[10.991s] Invoked command in '/home/cj/ros2_custom_msgs/build/robocallee_fms' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cj/ros2_study/install/yolov8_ros:/home/cj/ros2_study/install/yolo_ros:/home/cj/ros2_study/install/stt_whisper:/home/cj/ros2_study/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/cj/ros2_custom_msgs/build/robocallee_fms -- -j4 -l4
+[11.006s] Invoking command in '/home/cj/ros2_custom_msgs/build/robocallee_fms': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cj/ros2_study/install/yolov8_ros:/home/cj/ros2_study/install/yolo_ros:/home/cj/ros2_study/install/stt_whisper:/home/cj/ros2_study/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cj/ros2_custom_msgs/build/robocallee_fms
+[11.017s] -- Install configuration: ""
+[11.017s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/ament_index/resource_index/rosidl_interfaces/robocallee_fms
+[11.017s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/msg/ArucoPose.json
+[11.017s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/msg/ArucoPoseArray.json
+[11.018s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/CustomerRequest.json
+[11.019s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/EmployeeRequest.json
+[11.019s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/RobotArmRequest.json
+[11.019s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/rosidl_generator_c__visibility_control.h
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__functions.c
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__functions.h
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__functions.h
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__struct.h
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__type_support.h
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__description.c
+[11.020s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__description.c
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__type_support.c
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__type_support.c
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__type_support.h
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__struct.h
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__functions.c
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/aruco_pose_array.h
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/aruco_pose.h
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__type_support.h
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__functions.h
+[11.021s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__functions.c
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__description.c
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__struct.h
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__type_support.c
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__functions.h
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__type_support.h
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__type_support.h
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__functions.h
+[11.022s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__type_support.c
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__struct.h
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__description.c
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__type_support.c
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__struct.h
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__functions.c
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__functions.c
+[11.023s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__description.c
+[11.026s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/employee_request.h
+[11.026s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/robot_arm_request.h
+[11.026s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/customer_request.h
+[11.026s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/library_path.sh
+[11.026s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/library_path.dsv
+[11.026s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_generator_c.so
+[11.026s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_generator_c.so" to ""
+[11.026s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms
+[11.026s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg
+[11.027s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail
+[11.027s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__rosidl_typesupport_fastrtps_c.h
+[11.027s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__rosidl_typesupport_fastrtps_c.h
+[11.027s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.027s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv
+[11.027s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail
+[11.027s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__rosidl_typesupport_fastrtps_c.h
+[11.027s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__rosidl_typesupport_fastrtps_c.h
+[11.027s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__rosidl_typesupport_fastrtps_c.h
+[11.028s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_fastrtps_c.so
+[11.028s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_fastrtps_c.so" to ""
+[11.028s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms
+[11.028s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg
+[11.028s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail
+[11.028s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__type_support.c
+[11.028s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__type_support.c
+[11.028s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__rosidl_typesupport_introspection_c.h
+[11.028s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__rosidl_typesupport_introspection_c.h
+[11.028s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.029s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv
+[11.029s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__rosidl_typesupport_introspection_c.h
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__rosidl_typesupport_introspection_c.h
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__type_support.c
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__type_support.c
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__rosidl_typesupport_introspection_c.h
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__type_support.c
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_introspection_c.so
+[11.029s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_introspection_c.so" to ""
+[11.029s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_c.so
+[11.030s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_c.so" to ""
+[11.030s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms
+[11.030s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg
+[11.030s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail
+[11.030s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__builder.hpp
+[11.030s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__builder.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__type_support.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__struct.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__traits.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__type_support.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__struct.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__traits.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/aruco_pose.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.031s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/aruco_pose_array.hpp
+[11.032s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv
+[11.032s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail
+[11.032s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__traits.hpp
+[11.032s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__struct.hpp
+[11.032s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__type_support.hpp
+[11.032s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__builder.hpp
+[11.032s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__traits.hpp
+[11.032s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__type_support.hpp
+[11.033s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__traits.hpp
+[11.033s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__builder.hpp
+[11.033s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__builder.hpp
+[11.033s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__type_support.hpp
+[11.033s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__struct.hpp
+[11.033s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__struct.hpp
+[11.034s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/robot_arm_request.hpp
+[11.034s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/customer_request.hpp
+[11.034s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/employee_request.hpp
+[11.034s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms
+[11.034s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg
+[11.034s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail
+[11.034s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__rosidl_typesupport_fastrtps_cpp.hpp
+[11.034s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[11.035s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/dds_fastrtps
+[11.035s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.035s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv
+[11.035s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail
+[11.035s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__rosidl_typesupport_fastrtps_cpp.hpp
+[11.035s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__rosidl_typesupport_fastrtps_cpp.hpp
+[11.036s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/dds_fastrtps
+[11.036s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__rosidl_typesupport_fastrtps_cpp.hpp
+[11.036s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_fastrtps_cpp.so
+[11.037s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.037s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms
+[11.037s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg
+[11.037s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail
+[11.037s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__type_support.cpp
+[11.037s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__rosidl_typesupport_introspection_cpp.hpp
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose_array__rosidl_typesupport_introspection_cpp.hpp
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/msg/detail/aruco_pose__type_support.cpp
+[11.038s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv
+[11.038s] -- Up-to-date: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__type_support.cpp
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__rosidl_typesupport_introspection_cpp.hpp
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__type_support.cpp
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/customer_request__type_support.cpp
+[11.038s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/robot_arm_request__rosidl_typesupport_introspection_cpp.hpp
+[11.039s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/include/robocallee_fms/robocallee_fms/srv/detail/employee_request__rosidl_typesupport_introspection_cpp.hpp
+[11.039s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_introspection_cpp.so
+[11.040s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_introspection_cpp.so" to ""
+[11.040s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_cpp.so
+[11.040s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_typesupport_cpp.so" to ""
+[11.040s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/pythonpath.sh
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/pythonpath.dsv
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms-0.0.0-py3.12.egg-info
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms-0.0.0-py3.12.egg-info/PKG-INFO
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms-0.0.0-py3.12.egg-info/top_level.txt
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms-0.0.0-py3.12.egg-info/dependency_links.txt
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms-0.0.0-py3.12.egg-info/SOURCES.txt
+[11.041s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms
+[11.042s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_c.so
+[11.042s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/_robocallee_fms_s.ep.rosidl_typesupport_introspection_c.c
+[11.042s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/_robocallee_fms_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.042s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_introspection_c.so
+[11.042s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg
+[11.043s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/_aruco_pose_array.py
+[11.043s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/__init__.py
+[11.043s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/_aruco_pose.py
+[11.043s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/_aruco_pose_array_s.c
+[11.043s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/_aruco_pose_s.c
+[11.043s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_fastrtps_c.so
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/__init__.py
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/_robocallee_fms_s.ep.rosidl_typesupport_c.c
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_employee_request.py
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_robot_arm_request_s.c
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_robot_arm_request.py
+[11.044s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_customer_request.py
+[11.045s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/__init__.py
+[11.045s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_employee_request_s.c
+[11.045s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_customer_request_s.c
+[11.119s] Listing '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms'...
+[11.119s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/__init__.py'...
+[11.120s] Listing '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/__init__.py'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/_aruco_pose.py'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/msg/_aruco_pose_array.py'...
+[11.120s] Listing '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/__init__.py'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_customer_request.py'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_employee_request.py'...
+[11.120s] Compiling '/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/srv/_robot_arm_request.py'...
+[11.131s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_fastrtps_c.so
+[11.131s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_fastrtps_c.so" to ""
+[11.131s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_introspection_c.so
+[11.132s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_introspection_c.so" to ""
+[11.132s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_c.so
+[11.132s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/python3.12/site-packages/robocallee_fms/robocallee_fms_s__rosidl_typesupport_c.so" to ""
+[11.132s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_generator_py.so
+[11.132s] -- Set non-toolchain portion of runtime path of "/home/cj/ros2_custom_msgs/install/robocallee_fms/lib/librobocallee_fms__rosidl_generator_py.so" to ""
+[11.132s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/msg/ArucoPose.idl
+[11.132s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/msg/ArucoPoseArray.idl
+[11.132s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/CustomerRequest.idl
+[11.133s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/EmployeeRequest.idl
+[11.133s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/RobotArmRequest.idl
+[11.133s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/msg/ArucoPose.msg
+[11.133s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/msg/ArucoPoseArray.msg
+[11.134s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/CustomerRequest.srv
+[11.134s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/EmployeeRequest.srv
+[11.134s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/srv/RobotArmRequest.srv
+[11.135s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/ament_index/resource_index/package_run_dependencies/robocallee_fms
+[11.135s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/ament_index/resource_index/parent_prefix_path/robocallee_fms
+[11.135s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/ament_prefix_path.sh
+[11.135s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/ament_prefix_path.dsv
+[11.136s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/path.sh
+[11.136s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/environment/path.dsv
+[11.136s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/local_setup.bash
+[11.136s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/local_setup.sh
+[11.137s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/local_setup.zsh
+[11.137s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/local_setup.dsv
+[11.137s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/package.dsv
+[11.138s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/ament_index/resource_index/packages/robocallee_fms
+[11.138s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_generator_cExport.cmake
+[11.138s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_generator_cExport-noconfig.cmake
+[11.139s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_typesupport_fastrtps_cExport.cmake
+[11.139s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.139s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_introspection_cExport.cmake
+[11.140s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.140s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_cExport.cmake
+[11.140s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_cExport-noconfig.cmake
+[11.140s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_generator_cppExport.cmake
+[11.141s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.141s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.141s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_introspection_cppExport.cmake
+[11.141s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.142s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_cppExport.cmake
+[11.143s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fms__rosidl_typesupport_cppExport-noconfig.cmake
+[11.143s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_generator_pyExport.cmake
+[11.143s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/export_robocallee_fms__rosidl_generator_pyExport-noconfig.cmake
+[11.144s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/rosidl_cmake-extras.cmake
+[11.144s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.144s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.145s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/ament_cmake_export_libraries-extras.cmake
+[11.145s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/ament_cmake_export_targets-extras.cmake
+[11.145s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.145s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.146s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fmsConfig.cmake
+[11.146s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/cmake/robocallee_fmsConfig-version.cmake
+[11.146s] -- Installing: /home/cj/ros2_custom_msgs/install/robocallee_fms/share/robocallee_fms/package.xml
+[11.150s] Invoked command in '/home/cj/ros2_custom_msgs/build/robocallee_fms' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cj/ros2_study/install/yolov8_ros:/home/cj/ros2_study/install/yolo_ros:/home/cj/ros2_study/install/stt_whisper:/home/cj/ros2_study/install/my_first_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/cj/ros2_custom_msgs/build/robocallee_fms

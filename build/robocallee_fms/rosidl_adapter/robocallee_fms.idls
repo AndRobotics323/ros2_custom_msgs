@@ -1,0 +1,5 @@
+/home/cj/ros2_custom_msgs/build/robocallee_fms/rosidl_adapter/robocallee_fms:msg/ArucoPose.idl
+/home/cj/ros2_custom_msgs/build/robocallee_fms/rosidl_adapter/robocallee_fms:msg/ArucoPoseArray.idl
+/home/cj/ros2_custom_msgs/build/robocallee_fms/rosidl_adapter/robocallee_fms:srv/CustomerRequest.idl
+/home/cj/ros2_custom_msgs/build/robocallee_fms/rosidl_adapter/robocallee_fms:srv/EmployeeRequest.idl
+/home/cj/ros2_custom_msgs/build/robocallee_fms/rosidl_adapter/robocallee_fms:srv/RobotArmRequest.idl
